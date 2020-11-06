@@ -20,8 +20,8 @@ const auth = async (req, res, next) =>{
                 throw new Error()
             }
 
-            
-            req._id = _id
+            req.token = token
+            req.user = user 
            
             next()
 
