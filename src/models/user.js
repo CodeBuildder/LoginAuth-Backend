@@ -30,11 +30,6 @@ const userSchema = new mongoose.Schema({
         }
     },
 
-    role: {
-        type:String,
-        required:true,
-    },
-
     tokens:[{
 
         token:{
@@ -53,7 +48,7 @@ const userSchema = new mongoose.Schema({
 
 })
 
-userSchema.virtual('userDatas', {
+userSchema.virtual('tasks', {
     ref: 'UserData',
     localField: '_id',
     foreignField: 'user'

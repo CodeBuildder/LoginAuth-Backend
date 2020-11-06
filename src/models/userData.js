@@ -25,10 +25,6 @@ const userDataSchema = new mongoose.Schema( {
         required:true,
         ref: 'User'
     },
-    admin:{
-        type: String,
-        ref: 'UserData'
-    }
 
 },  {
         timestamps:true

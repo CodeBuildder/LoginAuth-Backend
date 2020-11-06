@@ -1,6 +1,5 @@
 const jwt = require('jsonwebtoken')
 const User = require('../models/user')
-const ROLE = require('../middleware/role')
 
 const auth = async (req, res, next) =>{
 //         if(req.user == null) {

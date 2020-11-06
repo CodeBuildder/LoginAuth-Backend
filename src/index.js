@@ -18,12 +18,3 @@ app.use(taskRouter)
 app.listen(port, () => {
     console.log('Wakey Wakey kk, Server is running on '+ port)
 })
-
-const UserData = require('./models/userData')
-
-const main = async () => {
-    const userData = await UserData.find({})
-    console.log(userData)
-}
-
-main()
