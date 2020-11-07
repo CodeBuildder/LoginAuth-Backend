@@ -1,4 +1,4 @@
-A backend template made using NodeJS using Admin Authentication via tokens.
+A backend template made using NodeJS along with Admin Authentication via tokens.
 
 In the above code, the Admin token has already been created and hidden, so the admin route will not be accessible.
 
